@@ -1,0 +1,32 @@
+//////////////////////////////////////////////////////////////////////////////////////////////
+    /* WAP to find Simple Intrest
+    int p;
+    float r;
+    float t;
+    float si;
+    cout<<"Enter principle amount, rate of intrest(%), time period(Years)\t to find simple intrest"<< endl;
+    cin>>p>>r>>t;
+    if(p>=100000){
+    si=(p*r*t)/100;
+    cout<<"Simple Intrest is: Rs"<<si;
+    }
+    else {
+        cout<<"Principle amount should be >=100000";
+    }
+
+ /////////////////////////////////////////////////////////////////////////////////////////////
+    /* Area of rectangle
+    int a,b,area;
+    cout<<"Enter length and breadth of rectangle to find area of rectangle.\n";
+    cin>>a>>b;
+    area=a*b;
+    cout<<"Area of rectangle is: "<<area;
+    //////////////////////////////////////////////////////////////////////////////////////////////
+    /*Transfer of money
+    int ac_balance1=25000,ac_balance2=30000,amt;
+    cout<<"Enter amount to transfer";cin>>amt;
+    ac_balance1=ac_balance1-amt;
+    ac_balance2=ac_balance2+amt;
+    cout<<"After transaction \nBalance in first account is "<<ac_balance1<<"\n Balance in second account is "<<ac_balance2;
+
+    */

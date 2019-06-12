@@ -1,0 +1,108 @@
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Result of five subjects and Division
+    int math,sc,ss,eng,sum;
+    float per;
+    cout<<"Enter marks obtained in maths, science, sst, english out of 100"<<endl;
+    cin>>math>>sc>>ss>>eng;
+    sum=math+sc+ss+eng;
+    per=(sum/4);
+    cout<<per;
+     if(math<0 || sc<0 || ss<0 || eng<0)
+        {
+            cout<<"INVALID\n";
+        }
+    else{
+            if(per>75)
+        {
+            cout<<"FIRST DIVISION!!";
+        }
+    else if(per<75 && per>=50)
+    {
+        cout<<"SECOND DIVISION!";
+    }
+    else if(per<50 && per>=40)
+        {
+            cout<<"PASS"<<endl;
+        }
+
+        else if(per<40)
+        cout<<"FAIL";
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /* WAP to fin Divisibility by 5
+    int a,b;
+    cout<<"Enter any integral value: ";
+    cin>>a;
+    if(a%5==0)
+        {
+            cout<<"Entered value is Divisible by 5";
+        }
+    else{
+        cout<<"Entered value is not Divisible by 5";
+    }
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*Amount Transfer using if-elese
+   int acc_balance1=30000,acc_balance2=45000,amt;
+
+   cout<<"Enter amount to be transfer"<<endl;
+   cin>>amt;
+   if(amt<=acc_balance1)
+    {
+    acc_balance1=acc_balance1-amt;
+    acc_balance2=acc_balance2+amt;
+   cout<<"After transaction\nAccount balance in 1 account: RS"<<acc_balance1<<endl<<"Account balance in 2 account is: Rs"<<acc_balance2<<endl;
+
+   }
+   else
+    {
+    cout<<"Transacation Fail!\nAmount is not sufficient in account."<<endl;
+   }
+
+
+
+    //arithmatic op +,-,*,/,%
+    //Relational op  <,>,<=,>=,==,!=
+    //if()
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /* WAP to find Simple Intrest
+    int p;
+    float r;
+    float t;
+    float si;
+    cout<<"Enter principle amount, rate of intrest(%), time period(Years)\t to find simple intrest"<< endl;
+    cin>>p>>r>>t;
+    if(p>=100000){
+    si=(p*r*t)/100;
+    cout<<"Simple Intrest is: Rs"<<si;
+    }
+    else {
+        cout<<"Principle amount should be >=100000";
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////
+#include<iostream>
+using namespace std;
+//WAP to use nested if-else loop
+int main(){
+int pin,acbalance=20000,amt;
+cout<<"Enter your pin";
+cin>>pin;
+if(pin==1234)
+{
+    cout<<"Enter amount to withdraw";
+    cin>>amt;
+    if(acbalance>amt)
+    {
+        acbalance-=amt;
+        cout<<"Remaining  balance is "<<acbalance;
+    }
+    else
+        cout<<"Invalid amount entered";
+}
+else
+    cout<<"Wrong pin number entered";
+
