@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //switch case-- is a conditional statement which is works like if-else-if
+    //syntax- switch(input){case 0:statement case 1: statement.......default: statment }
+    //1 tea 2 coffee 3 cold coffee
+    int choice,q,amt=0,ch;
+    x:
+    cout<<"BREAK TIME\nWhat would like to have:\n0.Samosa-Rs.15 \n1.Tea-Rs.10\n2.Coffee-Rs.15\n3.Cold coffee.Rs.45\n ";
+    cin>>choice;
+    switch(choice)
+    {
+        case 0: cout<<"Define Quantity.";
+        cin>> q;
+        cout<<"Have "<<q<<" samosa\n";
+        amt=amt+q*15;
+        cout<<"Would you like to purchase more? press '1' else press '0'\n";
+        cin>>ch;
+        if(ch==1)
+            goto x;
+            else
+        break;
+        case 1: cout<<"Define quantity.\n";
+        cin>>q;
+        cout<<"Have "<<q<<" TEA\n";
+        amt=amt+q*10;
+        cout<<"Would you like to purchase more? press '1' else press '0'\n";
+        cin>>ch;
+        if(ch==1)
+            goto x;
+        else
+        break;
+        case 2: cout<<"Define quantity.\n";
+        cin>>q;
+        cout<<"Have "<<q<<" COFFEE\n";
+        amt=amt+q*15;
+        cout<<"Would you like to purchase more? press '1' else press '0'\n";
+        cin>>ch;
+        if(ch==1)
+            goto x;
+        break;
+        case 3: cout<<"Define quantity.\n";
+        cin>>q;
+        cout<<"Have "<<q<<" COLD COFFEE\n";
+        amt=amt+q*45;
+        cout<<"Would you like to purchase more? press '1' else press '0'\n";
+        cin>>ch;
+        if(ch==1)
+            goto x;
+        break;
+
+        default: cout<<"Wrong Choice\n";
+        break;
+    }
+        cout<<"Total amount to be paid: Rs."<<amt;
+    return 0;
+}
+//
