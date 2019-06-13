@@ -105,4 +105,68 @@ if(pin==1234)
 }
 else
     cout<<"Wrong pin number entered";
+    
+    
+    
+                                                        HOME WORK
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+/*
+     ///PROGRAM 1:
+ //check a number is even or odd?
+ int number,remiander;
+ cout<<"Enter any number: ";
+ cin>>number;
+ remiander=number%2;
+ if(remiander==0)
+    cout<<number<<" is an EVEN number."<<endl;
+ else
+    {
+    cout<<number<<" is an ODD number."<<endl;
+ }
+ */
+
+            ///PROGRAM 5
+    //find out the reverse no of a given number
+//123--123%10-3   123/10--12-x   x%10 --2   x/10--1
+
+int a,b,c,d,e,f,g,sum;
+cout<<"Enter any three digit number: ";
+cin>>a;
+b=a%10;
+c=a/10;
+d=c%10;
+e=c/10;
+f=b*100;
+g=d*10;
+//cout<<b<<endl<<c<<endl<<endl<<d<<endl<<e<<endl<<endl<<f<<endl<<g<<endl;
+sum=f+g+e;
+cout<<"Reverse number is: "<<sum<<endl;
+if(sum==a)
+    cout<<"Entered number and its reverse are equal."<<endl;
+else
+cout<<"                   Entered number and its reverse are not equal.";
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+/*
+    ///PROGRAM 2
+//check an year is leap year or not
+ int year;
+ cout<<"Enter any year: ";
+ cin>>year;
+ if(year%4==0)
+ {
+     if(year%100==0)
+     {
+     if(year%400==0)
+        cout<<year<<" is leap year.\n";
+     else
+        cout<<year<<" is not leap year.\n";
+     }
 
