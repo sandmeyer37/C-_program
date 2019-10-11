@@ -1,0 +1,100 @@
+#include<iostream>
+using namespace std;
+/*
+class Operator{
+    public:
+int a,b;
+void get()
+{
+    cout<<"Enter two values: ";
+    cin>>a>>b;
+}
+void sum()
+{
+    cout<<"Sum: "<<a+b;
+}
+void operator+()
+{
+    a=a+a;
+    b=b+b;
+}
+void operator*()
+{
+    a=a*10;
+    b=b*100;
+}
+/*void operator+()
+{
+    a=a+25
+    b=b+10;
+}
+};
+
+
+int main()
+{
+    Operator op;
+    op.get();
+    op.sum();
+    +op;
+    op.sum();
+
+}
+
+
+
+*/
+
+/*
+class Op{
+public:
+ int real;
+ int img;
+Op(){}
+ Op(int r, int i)
+ {
+     real=r;
+     img=i;
+ }
+ Op operator+(Op const &x)
+ {
+ Op y;
+ y.real=real+x.real;
+ y.img=img+x.img;
+ return y;
+ }
+ void displey()
+ {
+     cout<<"complex no is: "<<real<<"+"<<img<<"i"<<endl;
+ }
+    };
+    int main()
+    {
+        Op p1(12,4);
+        p1.displey();
+        Op p2(20,5);
+        p2.displey();
+        Op p3=p1+p2;
+        p3.displey();
+    }
+*/
+class My{
+    protected:
+int a;
+friend void sum(My x);
+
+};
+void sum(My x)
+{
+    x.a=23;
+    cout<<x.a+x.a;
+
+}
+int main()
+{
+    My obj;
+//    obj.sum();
+    sum(obj);
+    return 0;
+}
+
